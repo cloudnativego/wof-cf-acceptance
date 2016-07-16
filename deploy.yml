@@ -1,0 +1,10 @@
+---
+spacemanconfig: ./spaceman.yml
+
+wofapps:
+- projecturi: github.com/cloudnativego/wof-reality
+  name: wof-reality
+  host: cng-wof-reality-djn
+- projecturi: github.com/cloudnativego/wof-mapservice
+  name: wof-maps
+  host: cng-wof-mapservice-djn

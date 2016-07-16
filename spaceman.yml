@@ -1,0 +1,40 @@
+---
+userprovided:
+- name: wof-command-processor
+  credentials:
+    password: none
+    user: none
+    url: http://wof-command-processor.cfapps.pez.pivotal.io
+- name: wof-map-service
+  credentials:
+    password: none
+    user: none
+    url: http://wof-map-service.cfapps.pez.pivotal.io
+- name: wof-reality-service
+  credentials:
+    password: none
+    user: none
+    url: http://wof-reality-service.cfapps.pez.pivotal.io
+- name: wof-rtms
+  credentials:
+    password: none
+    user: none
+    url: https://somewhere.pubnub.com
+
+brokered:
+- name: wof-reality-db
+  label: p-mongodb
+  plan: development
+  tags: "wof, reality"
+- name: wof-map-db
+  label: p-mongodb
+  plan: development
+  tags: "wof, map"
+- name: wof-event-db
+  label: p-mongodb
+  plan: development
+  tags: "wof, event"
+- name: wof-mq
+  label: p-rabbitmq
+  plan: standard
+  tags: "wof, mq"
